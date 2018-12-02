@@ -1,0 +1,12 @@
+Procesory|Karty_Graficzne|Pamiec_ram|Pendrive|Obudowy|Zasilacze|Laptopy|Monitory|Myszki|Klawiatury|G³oœniki|Przewody|P³yty_g³ówne|Ch³odzenie|Napêdy|Konsole|Gry|Chemia|S³uchawki|Inne
+
+
+P³atnosæ:
+typ:
+1 - gotówka
+2 - karta
+3 - przelew
+
+Status:
+1 - rozpoczêta
+2 - zakoñczona
