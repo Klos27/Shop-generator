@@ -5,23 +5,25 @@ import java.sql.*;
 
 public class DBUtils {
     // Declare JDBC Driver
-    private static final String JDBC_DRIVER = "oracle.jdbc.driver.OracleDriver";
+//    private static final String JDBC_DRIVER = "oracle.jdbc.driver.OracleDriver";
+    private static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
 
     // Connection
     private static Connection conn = null;
     private static Statement statement = null;
 
     // Login data
-    private static final String username = "sklep";
-    private static final String pass = "sklep";
+    private static final String username = "root";
+    private static final String pass = "root";
     private static final String ip = "localhost";
-    private static final String port = "1521";
-    private static final String sid = "orcl";
+    private static final String port = "3306";
+    private static final String sid = "hurtownia2";
 
     //Connection String
     //String connStr = "jdbc:oracle:thin:Username/Password@IP:Port/SID";  - oracle
     //       jdbc:mysql://localhost:3306/carpark
-    private static final String connStr = String.format("jdbc:oracle:thin:%s/%s@%s:%s/%s",username, pass, ip, port, sid);
+//    private static final String connStr = String.format("jdbc:mysql:%s/%s@%s:%s/%s",username, pass, ip, port, sid);
+    private static final String connStr = String.format("jdbc:mysql://%s:%s/%s?useSSL=false", ip, port, sid);
 
     // That format is needed for calling stored procedures
     //private static final String connStrLogin = String.format("jdbc:mysql://%s:%s/%s?user=%s&password=%s", ip, port, sid, username, pass);
@@ -39,7 +41,7 @@ public class DBUtils {
 
         // Establish the Oracle Connection
         try {
-            conn = DriverManager.getConnection(connStr);
+            conn = DriverManager.getConnection(connStr, username, pass);
             statement = conn.createStatement();
 //            System.out.println("Connected!");
         } catch (SQLException e) {
@@ -94,6 +96,15 @@ public class DBUtils {
             statement.executeUpdate(sqlStmt);
         } catch (SQLException e) {
             System.err.println("Error while executing update statement");
+            e.printStackTrace();
+        }
+    }
+
+    public static void dbExecuteWhatever(String sqlStmt) throws SQLException {
+        try {
+            statement.execute(sqlStmt);
+        } catch (SQLException e) {
+            System.err.println("Error while executing whatever statement");
             e.printStackTrace();
         }
     }

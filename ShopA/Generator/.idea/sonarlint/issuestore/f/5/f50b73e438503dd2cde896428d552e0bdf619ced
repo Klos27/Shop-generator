@@ -1,0 +1,7 @@
+
+Nsquid:S1444	"0Make this "public static procudenci" field final(›â‹’8–Å£¡÷,
+?squid:S1148)"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+4squid:S2386	"Make this member "protected".(›â‹’
+‹"squid:ClassVariableVisibilityCheck	"VMake procudenci a static final constant or non-public and provide accessors if needed.(›â‹’8–Å£¡÷,
+rsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(–®ÿä
+Vsquid:S1118":Add a private constructor to hide the implicit public one.(¯ÁÇÏúÿÿÿÿ

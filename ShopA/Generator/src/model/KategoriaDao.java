@@ -9,30 +9,25 @@ public class KategoriaDao {
             "Procesory",
             "Karty_Graficzne",
             "Pamiec_ram",
-            "Pendrive",
+            "Pamieci masowe",
             "Obudowy",
             "Zasilacze",
             "Laptopy",
             "Monitory",
             "Myszki",
             "Klawiatury",
-            "Głośniki",
-            "Przewody",
+            "Audio",
             "Płyty_główne",
             "Chłodzenie",
             "Napędy",
-            "Konsole",
-            "Gry",
-            "Chemia",
-            "Słuchawki",
             "Inne"
     };
 
     public static void fillRandomData() {
         for (int i = 1; i <= kategorie.length; i++) {
-            String stmt = String.format("INSERT INTO KATEGORIA (KATEGORIA_ID, NAZWA) values " +
-                            "(%d, \'%s\')",
-                    i, kategorie[i-1]);
+            String stmt = String.format("INSERT INTO KATEGORIA (ID, NAZWA, OPIS) values " +
+                            "(%d, \'%s\', '%s')",
+                    i, kategorie[i-1], String.format("Opis kategorii: %s",kategorie[i-1] ));
             try {
                 DBUtils.dbExecuteUpdate(stmt);
             } catch (SQLException e) {

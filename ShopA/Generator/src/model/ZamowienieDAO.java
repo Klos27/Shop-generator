@@ -2,16 +2,18 @@ package model;
 
 import Util.DBUtils;
 
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Random;
 
 public class ZamowienieDAO {
-    public static void fillRandomData(int amount) {
+    private static final Random random = new Random();
+    public static void fillRandomData(int amount, int klientow) {
         for (int i = 1; i <= amount; i++) {
 
-            String stmt = String.format("INSERT INTO ZAMOWIENIE (ZAMOWIENIE_ID, DATA_ZAM) values " +
-                            "(%d, TO_DATE('%s', 'yyyy/mm/dd hh24:mi:ss'))",
-                    i, generateDate());
+            String stmt = String.format("INSERT INTO ZAMOWIENIE (ID, data_godzina, klient_id, platnosc_id, przesylka_id, kwota) values " +
+                            "(%d, '%s', %d, %d, %d, %d)",
+                    i, generateDate(), random.nextInt(klientow) + 1, i, i, getAmount(i));
             if(i % 5000 == 0)
                 System.out.println("Generating Zamowienie -> " + i + " so far.");
             try {
@@ -22,13 +24,28 @@ public class ZamowienieDAO {
         }
     }
 
+    public static int getAmount(int zamowienieId){
+        int kwota = 1;
+
+        String stmt = String.format("select SUM(CENA_ZAKUPU) as suma from (select CENA_ZAKUPU from POZYCJA where ZAMOWIENIE_ID=%d) a", zamowienieId);
+        try {
+            ResultSet rs = DBUtils.dbExecuteQuery(stmt);
+            if (rs.next()) {
+                kwota = rs.getInt("suma");
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return kwota;
+    }
+
     public static String generateDate(){
         StringBuilder sb = new StringBuilder();
         Random rand = new Random();
 
         // generate day
         sb.append(rand.nextInt(9) + 2010);
-        sb.append("/");
+        sb.append("-");
         int month = rand.nextInt(12) + 1;
         if(month < 10){
             sb.append("0");
@@ -36,7 +53,7 @@ public class ZamowienieDAO {
         }
         else
             sb.append(month);
-        sb.append("/");
+        sb.append("-");
         int day;
         switch(month){
             case 1:

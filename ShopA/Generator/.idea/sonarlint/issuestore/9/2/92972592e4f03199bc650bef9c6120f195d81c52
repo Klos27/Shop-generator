@@ -1,0 +1,12 @@
+
+"squid:ClassVariableVisibilityCheck
+"QMake nazwa a static final constant or non-public and provide accessors if needed.(ÏÈ¶¸
+rsquid:S00116"URename this field "Produkt_id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÿ¦”¶şÿÿÿÿ
+‰"squid:ClassVariableVisibilityCheck"VMake randomOpis a static final constant or non-public and provide accessors if needed.(áñæôÿÿÿÿÿ
+€squid:S00116	"aRename this field "kategoria_producent_id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¹‚Ğ“8ñÜ¡÷,
+rsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(–®ÿä
+‰"squid:ClassVariableVisibilityCheck"VMake Produkt_id a static final constant or non-public and provide accessors if needed.(ÿ¦”¶şÿÿÿÿ
+—"squid:ClassVariableVisibilityCheck	"bMake kategoria_producent_id a static final constant or non-public and provide accessors if needed.(¹‚Ğ“8ñÜ¡÷,
+~"squid:ClassVariableVisibilityCheck"PMake cena a static final constant or non-public and provide accessors if needed.(‚ò”ï
+Lsquid:S1444"0Make this "public static randomOpis" field final(áñæôÿÿÿÿÿ
+}"squid:ClassVariableVisibilityCheck"PMake opis a static final constant or non-public and provide accessors if needed.(Å×³6

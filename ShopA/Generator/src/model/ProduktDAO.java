@@ -9,9 +9,9 @@ public class ProduktDAO {
     public static void fillRandomData(int iloscProduktow, int iloscKategorii) {
         for (int i = 1; i <= iloscProduktow; i++) {
             Produkt produkt = Produkt.generateProdukt(iloscKategorii);
-            String stmt = String.format("INSERT INTO PRODUKT (PRODUKT_ID, NAZWA, CENA, OPIS, STAN, KATEGORIA_ID) values " +
-                            "(%d, \'%s\', %d, \'%s\', %d, %d)",
-                    i, produkt.nazwa, produkt.cena, produkt.opis, produkt.stan, produkt.kategoria);
+            String stmt = String.format("INSERT INTO PRODUKT (ID, KATEGORIA_PRODUCENT_ID, OPIS, NAZWA, CENA) values " +
+                            "(%d, %d, \'%s\', '%s', %d)",
+                    i, produkt.kategoria_producent_id, produkt.opis, produkt.nazwa, produkt.cena);
             if(i % 1000 == 0)
                 System.out.println("Generating Produkt -> " + i + " so far.");
             try {

@@ -10,9 +10,9 @@ public class AdresDAO {
         for (int i = 1; i <= amount; i++) {
             Adres adres = Adres.generateAdres();
 
-            String stmt = String.format("INSERT INTO ADRES (ADRES_ID, ULICA, NR_DOMU, NR_MIESZKANIA, KOD_POCZTOWY, MIASTO, WOJEWODZTWO) values " +
-                            "(%d, \'%s\', %s, %s, %s, \'%s\', \'%s\')",
-                    i, adres.ulica, adres.nr_domu, adres.nr_mieszkania, adres.kod_pocztowy, adres.miasto, adres.wojewodztwo);
+            String stmt = String.format("INSERT INTO ADRES (ID, ULICA, NR_DOMU, MIEJSCOWOSC, KOD_POCZTOWY, WOJEWODZTWO, KRAJ) values " +
+                            "(%d, \'%s\', %s, \'%s\', \'%s\', \'%s\', \'%s\')",
+                    i, adres.ulica, adres.nr_domu, adres.miejscowosc, adres.kod_pocztowy, adres.wojewodztwo, adres.kraj);
             if(i % 1000 == 0)
                 System.out.println("Generatin addresses -> " + i + " so far.");
             try {

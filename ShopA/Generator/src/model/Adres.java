@@ -7,19 +7,19 @@ public class Adres {
     public long adres_id = 0;
     public String ulica;
     public int nr_domu;
-    public int nr_mieszkania;
+    public String miejscowosc;
     public int kod_pocztowy;
-    public String miasto;
+    public String kraj;
     public String wojewodztwo;
 
     public static Adres generateAdres(){
         Adres adres = new Adres();
         adres.ulica = generateUlica();
         adres.nr_domu = generateNr_domu();
-        adres.nr_mieszkania = generateNr_mieszkania();
         adres.kod_pocztowy = generateKod_pocztowy();
-        adres.miasto = generateMiasto();
-        adres.wojewodztwo = generateWojewodztwo();
+        adres.kraj = generateKraj();
+        adres.miejscowosc = generateMiasto();
+        adres.wojewodztwo = generateWojewodztwo(adres.kraj);
         return adres;
     }
 
@@ -45,9 +45,18 @@ public class Adres {
         return randomString.nextString();
     }
 
-    public static String generateWojewodztwo() {
+    public static String generateKraj() {
         Random rand = new Random();
-        String[] wojewodztwa = {
+        String[] kraje = {
+                "Polska",
+                "Niemcy",
+        };
+        return kraje[rand.nextInt(2)];
+    }
+
+    public static String generateWojewodztwo(String kraj) {
+        Random rand = new Random();
+        String[] wojewodztwaPL = {
                 "dolnośląskie",
                 "kujawsko-pomorskie",
                 "lubelskie",
@@ -65,6 +74,25 @@ public class Adres {
                 "wielkopolskie",
                 "zachodniopomorskie"
         };
-        return wojewodztwa[rand.nextInt(16)];
+
+        String[] wojewodztwaDE = {
+                "Baden-Wurttemberga",
+                "Bayern",
+                "Berlin",
+                "Brandenburg",
+                "Bremen",
+                "Hamburg",
+                "Hessen",
+                "Mecklenburg-Vorpommern",
+                "Niedersachsen",
+                "Nordrhein-Westfalen",
+                "Rheinland-Pfalz",
+                "Saarland",
+                "Sachsen",
+                "Sachsen-Anhalt",
+                "Schleswig-Holstein",
+                "Thuringen"
+        };
+        return kraj.equals("Polska") ?  wojewodztwaPL[rand.nextInt(16)] : wojewodztwaDE[rand.nextInt(16)];
     }
 }
