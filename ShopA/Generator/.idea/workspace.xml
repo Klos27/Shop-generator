@@ -2,21 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="212248bb-b164-4b14-b3e7-664e13db1c42" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Util/DBUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Util/DBUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Adres.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/AdresDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/KategoriaDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/PlatnoscDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Produkt.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/ProduktDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Uzytkownik.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/UzytkownikAdresDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/UzytkownikDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/UzytkownikZamowienieDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/ZamowienieDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/ZamowieniePlatnoscDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/ZamowienieProduktDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,11 +24,13 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="java" value="64" />
+          <entry key="sql" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="JAVA" value="64" />
+          <entry key="SQL" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -59,10 +47,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Util/DBUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
+            <state relative-caret-position="-663">
               <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -92,11 +80,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="159">
-              <caret line="77" lean-forward="true" selection-start-line="77" selection-end-line="77" />
+            <state relative-caret-position="102">
+              <caret line="6" column="51" selection-start-line="6" selection-start-column="49" selection-end-line="6" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/hurtownia.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -152,7 +149,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="width" value="1381" />
     <option name="height" value="745" />
@@ -184,12 +181,6 @@
               <item name="Generator" type="b2602c69:ProjectViewProjectNode" />
               <item name="Generator" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Generator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Generator" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Util" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -208,7 +199,7 @@
     <property name="SearchEverywhereHistoryKey" value="random&#9;PSI&#9;JAVA://Util.RandomString" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544035169299" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544035411105" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Libraries" />
@@ -265,12 +256,12 @@
       <option name="presentableId" value="Default" />
       <updated>1543838036817</updated>
       <workItem from="1543838040739" duration="13666000" />
-      <workItem from="1544028772997" duration="6182000" />
+      <workItem from="1544028772997" duration="6434000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19848000" />
+    <option name="totallyTimeSpent" value="20100000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -285,7 +276,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.4016129" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.4016129" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -293,7 +284,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="SonarLint" order="8" weight="0.32903227" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32903227" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32903227" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -569,16 +560,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="77" lean-forward="true" selection-start-line="77" selection-end-line="77" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/model/ReklamacjaDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
@@ -595,11 +576,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Util/DBUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
+        <state relative-caret-position="-663">
           <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="51" selection-start-line="6" selection-start-column="49" selection-end-line="6" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hurtownia.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
         </state>
       </provider>
     </entry>
