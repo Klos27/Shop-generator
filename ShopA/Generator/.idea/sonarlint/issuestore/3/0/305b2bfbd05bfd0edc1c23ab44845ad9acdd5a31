@@ -1,0 +1,11 @@
+
+Vsquid:S1118":Add a private constructor to hide the implicit public one.(¯ßÅÓøÿÿÿÿ
+Asquid:S2885"Make "c" an instance variable.(ï²õâüÿÿÿÿ8‹»îü÷,
+>squid:S2885" Make "sdf" an instance variable.(·æõö8‚üïü÷,
+Fsquid:S1148&"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8¯Ìîü÷,
+[
+squid:S106""9Replace this use of System.out or System.err by a logger.(éÈ¸„şÿÿÿÿ8¯Ìîü÷,
+Vsquid:UselessImportCheck
+"+Remove this unused import 'java.util.Date'.(¸…¼ü8¡î÷û÷,
+Fsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8íãøü÷,
+Ysquid:UselessImportCheck"/Remove this unused import 'java.sql.ResultSet'.(ˆóÚw8¥´·û÷,

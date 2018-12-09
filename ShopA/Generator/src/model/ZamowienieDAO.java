@@ -13,9 +13,9 @@ public class ZamowienieDAO {
 
             String stmt = String.format("INSERT INTO ZAMOWIENIE (ID, data_godzina, klient_id, platnosc_id, przesylka_id, kwota) values " +
                             "(%d, '%s', %d, %d, %d, %d)",
-                    i, generateDate(), random.nextInt(klientow) + 1, i, i, getAmount(i));
+                    i, generateDate(), random.nextInt(klientow) + 1, i, random.nextInt(3) + 1, getAmount(i));
             if(i % 5000 == 0)
-                System.out.println("Generating Zamowienie -> " + i + " so far.");
+                System.out.println("Generating Zamowienie -> " + i + "/" + amount + " so far. ");
             try {
                 DBUtils.dbExecuteUpdate(stmt);
             } catch (SQLException e) {
@@ -41,12 +41,11 @@ public class ZamowienieDAO {
 
     public static String generateDate(){
         StringBuilder sb = new StringBuilder();
-        Random rand = new Random();
 
         // generate day
-        sb.append(rand.nextInt(9) + 2010);
+        sb.append(random.nextInt(9) + 2010);
         sb.append("-");
-        int month = rand.nextInt(12) + 1;
+        int month = random.nextInt(12) + 1;
         if(month < 10){
             sb.append("0");
             sb.append(month);
@@ -63,13 +62,13 @@ public class ZamowienieDAO {
             case 8:
             case 10:
             case 12:
-                day = rand.nextInt(31) + 1;
+                day = random.nextInt(31) + 1;
                 break;
             case 2:
-                day = rand.nextInt(28) + 1;
+                day = random.nextInt(28) + 1;
                 break;
             default:
-                day = rand.nextInt(30) + 1;
+                day = random.nextInt(30) + 1;
                 break;
         }
         if(day < 10){
@@ -81,7 +80,7 @@ public class ZamowienieDAO {
         sb.append(" ");
 
         // generate hour
-        int n = rand.nextInt(24);
+        int n = random.nextInt(24);
         if( n == 0)
             sb.append("00");
         else if(n < 10){
@@ -93,7 +92,7 @@ public class ZamowienieDAO {
         sb.append(":");
 
         // generate minute
-        n = rand.nextInt(60);
+        n = random.nextInt(60);
         if( n == 0)
             sb.append("00");
         else if(n < 10){
@@ -105,7 +104,7 @@ public class ZamowienieDAO {
         sb.append(":");
 
         // generate sec
-        n = rand.nextInt(60);
+        n = random.nextInt(60);
         if( n == 0)
             sb.append("00");
         else if(n < 10){

@@ -1,35 +1,38 @@
 
-wsquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(¾ì¸Üùÿÿÿÿ
-T
-squid:S106b"9Replace this use of System.out or System.err by a logger.(âƒÀ•þÿÿÿÿ
-O
-squid:S106U"9Replace this use of System.out or System.err by a logger.(±§¥Ä
-rsquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ºõñ°
-nsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ý–°ûÿÿÿÿ8ÞšÛŸ÷,
-wsquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(•­Éµÿÿÿÿÿ
+rsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ê§ö
+jsquid:S2095Q"NUse try-with-resources or close this "CachedRowSetImpl" in a "finally" clause.(íÏ„ýøÿÿÿÿ
+bsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ð¤åÜ
 ?squid:S1148&"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
-rsquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ëòû¦
-O
-squid:S106%"9Replace this use of System.out or System.err by a logger.(öÇøœ
-Qsquid:S1191"5Use classes from the Java API instead of Sun classes.(öšô×ýÿÿÿÿ
-gsquid:CommentedOutCodeLine("<This block of commented-out lines of code should be removed.(žû®Þûÿÿÿÿ
-Fsquid:S2093K"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ
-?squid:S1148B"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
-asquid:CommentedOutCodeLine."<This block of commented-out lines of code should be removed.(öî×E
+nsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(˜ŒÃ”úÿÿÿÿ8ÉÉÐŸ÷,
+wsquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(¾ì¸Üùÿÿÿÿ
 ?squid:S1148V"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+gsquid:CommentedOutCodeLine>"<This block of commented-out lines of code should be removed.(€óêÝûÿÿÿÿ
 O
 squid:S106A"9Replace this use of System.out or System.err by a logger.(Œ¶úÂ
-rsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ê§ö
-bsquid:CommentedOutCodeLine#"<This block of commented-out lines of code should be removed.(Žð¶
+nsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ý–°ûÿÿÿÿ8ÞšÛŸ÷,
+Fsquid:S1148l"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8ÏøËü÷,
 Csquid:S3457%"%String contains no format specifiers.(öÇøœ8Ì¥óŸ÷,
-jsquid:S2095Q"NUse try-with-resources or close this "CachedRowSetImpl" in a "finally" clause.(íÏ„ýøÿÿÿÿ
-?squid:S1148c"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
-bsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ð¤åÜ
-rsquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(¦–Ý¢
-nsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(˜ŒÃ”úÿÿÿÿ8ÉÉÐŸ÷,
+qsquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ç¾éi
+rsquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ëòû¦
 ?squid:S11481"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
-gsquid:CommentedOutCodeLine>"<This block of commented-out lines of code should be removed.(€óêÝûÿÿÿÿ
+rsquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ºõñ°
 T
 squid:S1060"9Replace this use of System.out or System.err by a logger.(ˆˆµÈþÿÿÿÿ
-Vsquid:S1118":Add a private constructor to hide the implicit public one.(Ýµï„üÿÿÿÿ
+O
+squid:S106U"9Replace this use of System.out or System.err by a logger.(±§¥Ä
 rsquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(öÓòÕ
+asquid:CommentedOutCodeLine."<This block of commented-out lines of code should be removed.(öî×E
+Vsquid:S1118":Add a private constructor to hide the implicit public one.(Ýµï„üÿÿÿÿ
+rsquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(¦–Ý¢
+?squid:S1148B"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+T
+squid:S106b"9Replace this use of System.out or System.err by a logger.(âƒÀ•þÿÿÿÿ
+Qsquid:S1191"5Use classes from the Java API instead of Sun classes.(öšô×ýÿÿÿÿ
+gsquid:CommentedOutCodeLine("<This block of commented-out lines of code should be removed.(žû®Þûÿÿÿÿ
+?squid:S1148c"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+O
+squid:S106%"9Replace this use of System.out or System.err by a logger.(öÇøœ
+Fsquid:S2093K"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ
+bsquid:CommentedOutCodeLine#"<This block of commented-out lines of code should be removed.(Žð¶
+[
+squid:S106k"9Replace this use of System.out or System.err by a logger.(üÎµúúÿÿÿÿ8ÏøËü÷,

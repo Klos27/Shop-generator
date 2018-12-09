@@ -42,12 +42,11 @@ public class PromocjaDao {
 
     public static String generateDate(){
         StringBuilder sb = new StringBuilder();
-        Random rand = new Random();
 
         // generate day
-        sb.append(rand.nextInt(9) + 2010);
+        sb.append(random.nextInt(9) + 2010);
         sb.append("-");
-        int month = rand.nextInt(12) + 1;
+        int month = random.nextInt(12) + 1;
         if(month < 10){
             sb.append("0");
             sb.append(month);
@@ -64,13 +63,13 @@ public class PromocjaDao {
             case 8:
             case 10:
             case 12:
-                day = rand.nextInt(31) + 1;
+                day = random.nextInt(31) + 1;
                 break;
             case 2:
-                day = rand.nextInt(28) + 1;
+                day = random.nextInt(28) + 1;
                 break;
             default:
-                day = rand.nextInt(30) + 1;
+                day = random.nextInt(30) + 1;
                 break;
         }
         if(day < 10){

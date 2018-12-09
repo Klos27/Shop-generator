@@ -12,6 +12,8 @@ public class Adres {
     public String kraj;
     public String wojewodztwo;
 
+    private static final Random rand = new Random();
+
     public static Adres generateAdres(){
         Adres adres = new Adres();
         adres.ulica = generateUlica();
@@ -24,29 +26,28 @@ public class Adres {
     }
 
     public static String generateUlica() {
-        RandomString randomString = new RandomString(new Random().nextInt(16) + 4);
+        RandomString randomString = new RandomString(rand.nextInt(16) + 4);
         return randomString.nextString();
     }
 
     public static int generateNr_domu() {
-        return (new Random().nextInt(1000) + 1);
+        return (rand.nextInt(1000) + 1);
     }
 
     public static int generateNr_mieszkania() {
-        return (new Random().nextInt(1000) + 1);
+        return (rand.nextInt(1000) + 1);
     }
 
     public static int generateKod_pocztowy() {
-        return (new Random().nextInt(99000) + 1000);
+        return (rand.nextInt(99000) + 1000);
     }
 
     public static String generateMiasto() {
-        RandomString randomString = new RandomString(new Random().nextInt(16) + 4);
+        RandomString randomString = new RandomString(rand.nextInt(16) + 4);
         return randomString.nextString();
     }
 
     public static String generateKraj() {
-        Random rand = new Random();
         String[] kraje = {
                 "Polska",
                 "Niemcy",
@@ -55,7 +56,6 @@ public class Adres {
     }
 
     public static String generateWojewodztwo(String kraj) {
-        Random rand = new Random();
         String[] wojewodztwaPL = {
                 "dolnośląskie",
                 "kujawsko-pomorskie",

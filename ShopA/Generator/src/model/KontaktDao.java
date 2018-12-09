@@ -7,7 +7,7 @@ import java.sql.SQLException;
 import java.util.Random;
 
 public class KontaktDao {
-
+    private static final Random rand = new Random();
     public static void fillRandomData(int ilosc_klientow) {
         for (int i = 1; i <= ilosc_klientow; i++) {
             String stmt = String.format("INSERT INTO KONTAKT (ID, EMAIL, telefon1, telefon2) values " +
@@ -26,7 +26,6 @@ public class KontaktDao {
     }
 
     public static String generateTelefon(){
-        Random rand = new Random();
         StringBuilder sb = new StringBuilder();
         sb.append("48");
         sb.append(rand.nextInt(9) + 1);

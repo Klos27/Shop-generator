@@ -1,12 +1,0 @@
-
-ssquid:S4144"\Update this method so that its implementation is not identical to "generateImie" on line 27.(æ„–µ
-Œ"squid:ClassVariableVisibilityCheck"YMake uzytkownik_id a static final constant or non-public and provide accessors if needed.(Ê‘•Éıÿÿÿÿ
-~"squid:ClassVariableVisibilityCheck	"PMake imie a static final constant or non-public and provide accessors if needed.(÷Šì–
-‚"squid:ClassVariableVisibilityCheck
-"TMake nazwisko a static final constant or non-public and provide accessors if needed.(±ãŸ±
-„"squid:ClassVariableVisibilityCheck"QMake email a static final constant or non-public and provide accessors if needed.(¾Æ†Ëıÿÿÿÿ
-€"squid:ClassVariableVisibilityCheck"SMake telefon a static final constant or non-public and provide accessors if needed.(À—İ
-~"squid:ClassVariableVisibilityCheck"PMake plec a static final constant or non-public and provide accessors if needed.(î“
-}"squid:ClassVariableVisibilityCheck"OMake typ a static final constant or non-public and provide accessors if needed.(Î‘Ê¹
-Psquid:S34005"9Remove this method and declare a constant for this value.(È¸å
-usquid:S00116"XRename this field "uzytkownik_id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ê‘•Éıÿÿÿÿ

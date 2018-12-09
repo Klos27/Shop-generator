@@ -1,32 +1,49 @@
 
+[
+squid:S106!"9Replace this use of System.out or System.err by a logger.(‹š‡øÿÿÿÿ8ª¾İ¢÷,
+ysquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(¤è±˜8øÏÿş÷,
+[
+squid:S106<"9Replace this use of System.out or System.err by a logger.(½äõĞùÿÿÿÿ8ó¹ö¥÷,
+[
+squid:S106F"9Replace this use of System.out or System.err by a logger.(Õï²¨øÿÿÿÿ8³Ôñú÷,
+ysquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(Ûš¬È8øÏÿş÷,
 V
-squid:S106"9Replace this use of System.out or System.err by a logger.(›„è°8¿•Ü¢÷,
-isquid:CommentedOutCodeLineA"<This block of commented-out lines of code should be removed.(ÍÚ„‘8Îùÿ ÷,
-V
-squid:S106$"9Replace this use of System.out or System.err by a logger.(ÓŸÛı8Æ¾ù¡÷,
-?squid:S1148O"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
-V
-squid:S1061"9Replace this use of System.out or System.err by a logger.(ÜÌó·8Œ¼¨¤÷,
+squid:S106:"9Replace this use of System.out or System.err by a logger.(ÜÌó·8Œ¼¨¤÷,
+ysquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(õ”øé8øÏÿş÷,
+~squid:S00115	"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(‘ü»ÿÿÿÿÿ8øÏÿş÷,
+?squid:S1148_"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+~squid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(°ºéÖıÿÿÿÿ8øÏÿş÷,
+nsquid:CommentedOutCodeLineQ"<This block of commented-out lines of code should be removed.(»ŞÛŞıÿÿÿÿ8Ü­ ¥÷,
+isquid:CommentedOutCodeLine%"<This block of commented-out lines of code should be removed.(¯¬ªÔ8ÿâŞ¢÷,
 T
-squid:S106F"9Replace this use of System.out or System.err by a logger.(¼û¤ñûÿÿÿÿ
-isquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¯¬ªÔ8ÿâŞ¢÷,
-V
-squid:S106&"9Replace this use of System.out or System.err by a logger.(õòµ«8Ö•ã¡÷,
+squid:S106\"9Replace this use of System.out or System.err by a logger.(¼û¤ñûÿÿÿÿ
+?squid:S1148e"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
 [
-squid:S106"9Replace this use of System.out or System.err by a logger.(ÁÛ …üÿÿÿÿ8ôÔµ¢÷,
+squid:S106,"9Replace this use of System.out or System.err by a logger.(ñ¥ƒûÿÿÿÿ8§İó¡÷,
+~squid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(™€¦øıÿÿÿÿ8øÏÿş÷,
+[
+squid:S106"9Replace this use of System.out or System.err by a logger.(ÄâåÛùÿÿÿÿ8ôÔµ¢÷,
+V
+squid:S106B"9Replace this use of System.out or System.err by a logger.(¯ô•Š8Ö»ºú÷,
+V
+squid:S106>"9Replace this use of System.out or System.err by a logger.(¶†€‚8ô¼é¥÷,
+V
+squid:S106"9Replace this use of System.out or System.err by a logger.(›„è°8¿•Ü¢÷,
+V
+squid:S106K"9Replace this use of System.out or System.err by a logger.(òŒò¸8êàßû÷,
+ysquid:S00115
+"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(İï…€8øÏÿş÷,
+ysquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(«Òùí8øÏÿş÷,
+ysquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(Á‘ˆÕ8øÏÿş÷,
+V
+squid:S1068"9Replace this use of System.out or System.err by a logger.(ù‡¢ö8èö­£÷,
 T
-squid:S106 "9Replace this use of System.out or System.err by a logger.(àµÕŞúÿÿÿÿ
-?squid:S1148I"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
-[
-squid:S106""9Replace this use of System.out or System.err by a logger.(ñ¥ƒûÿÿÿÿ8§İó¡÷,
-[
-squid:S106"9Replace this use of System.out or System.err by a logger.(‹š‡øÿÿÿÿ8ª¾İ¢÷,
+squid:S106*"9Replace this use of System.out or System.err by a logger.(àµÕŞúÿÿÿÿ
 V
-squid:S106/"9Replace this use of System.out or System.err by a logger.(ù‡¢ö8èö­£÷,
-nsquid:CommentedOutCodeLine;"<This block of commented-out lines of code should be removed.(»ŞÛŞıÿÿÿÿ8Ü­ ¥÷,
+squid:S1060"9Replace this use of System.out or System.err by a logger.(õòµ«8Ö•ã¡÷,
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(ØŸûûÿÿÿÿ
+~squid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(¥¢›Íşÿÿÿÿ8øÏÿş÷,
+isquid:CommentedOutCodeLineW"<This block of commented-out lines of code should be removed.(ÍÚ„‘8Îùÿ ÷,
 V
-squid:S1065"9Replace this use of System.out or System.err by a logger.(¶†€‚8ô¼é¥÷,
-O
-squid:S106"9Replace this use of System.out or System.err by a logger.(İ—è•
-[
-squid:S1063"9Replace this use of System.out or System.err by a logger.(½äõĞùÿÿÿÿ8ó¹ö¥÷,
+squid:S106."9Replace this use of System.out or System.err by a logger.(ÓŸÛı8Æ¾ù¡÷,

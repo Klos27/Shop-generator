@@ -4,16 +4,18 @@ import model.*;
 import java.sql.SQLException;
 
 public class Main {
-    private static final int iloscUzytkownikow = 30;
-    private static final int iloscPracownikow = 10;
-    private static final int iloscZamowien = 3;
-    private static final int iloscSprzedanychPrzedmiotow = 3;
+    private static final int iloscUzytkownikow = 100000;
+    private static final int iloscPracownikow = 100;
+    private static final int iloscZamowien = 300000;
+    private static final int iloscSprzedanychPrzedmiotow = 1000000;
     private static final int iloscKategorii = KategoriaDao.kategorie.length;
     private static final int iloscProducentow = ProducentDao.procudenci.length;
     private static final int iloscProducentowiKategorii = 50;
-    private static final int iloscProduktow = 30;
-    private static final int iloscReklamacji = 30;
-    private static final int iloscPromocji = 5;
+    private static final int iloscProduktow = 10000;
+    private static final int iloscReklamacji = 2000;
+    private static final int iloscPromocji = 1000;
+
+
 
     public static void main(String[] args){
         try{

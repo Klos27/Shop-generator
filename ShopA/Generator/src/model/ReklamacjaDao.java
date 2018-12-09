@@ -26,12 +26,11 @@ public class ReklamacjaDao {
 
     public static String generateDate(){
         StringBuilder sb = new StringBuilder();
-        Random rand = new Random();
 
         // generate day
-        sb.append(rand.nextInt(9) + 2010);
+        sb.append(random.nextInt(9) + 2010);
         sb.append("-");
-        int month = rand.nextInt(12) + 1;
+        int month = random.nextInt(12) + 1;
         if(month < 10){
             sb.append("0");
             sb.append(month);
@@ -48,13 +47,13 @@ public class ReklamacjaDao {
             case 8:
             case 10:
             case 12:
-                day = rand.nextInt(31) + 1;
+                day = random.nextInt(31) + 1;
                 break;
             case 2:
-                day = rand.nextInt(28) + 1;
+                day = random.nextInt(28) + 1;
                 break;
             default:
-                day = rand.nextInt(30) + 1;
+                day = random.nextInt(30) + 1;
                 break;
         }
         if(day < 10){
@@ -66,7 +65,7 @@ public class ReklamacjaDao {
         sb.append(" ");
 
         // generate hour
-        int n = rand.nextInt(24);
+        int n = random.nextInt(24);
         if( n == 0)
             sb.append("00");
         else if(n < 10){
@@ -78,7 +77,7 @@ public class ReklamacjaDao {
         sb.append(":");
 
         // generate minute
-        n = rand.nextInt(60);
+        n = random.nextInt(60);
         if( n == 0)
             sb.append("00");
         else if(n < 10){
@@ -90,7 +89,7 @@ public class ReklamacjaDao {
         sb.append(":");
 
         // generate sec
-        n = rand.nextInt(60);
+        n = random.nextInt(60);
         if( n == 0)
             sb.append("00");
         else if(n < 10){
@@ -104,10 +103,9 @@ public class ReklamacjaDao {
     }
 
     public static String generateOpis() {
-        Random rand = new Random();
-        int length2 = rand.nextInt(100) + 10;
-        int start = rand.nextInt(length2);
-        int end = length2 + rand.nextInt(length2);
+        int length2 = random.nextInt(100) + 10;
+        int start = random.nextInt(length2);
+        int end = length2 + random.nextInt(length2);
 
         return randomOpis.substring(start,end);
     }
