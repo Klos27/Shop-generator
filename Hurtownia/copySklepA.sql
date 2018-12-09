@@ -2,8 +2,8 @@
 BEGIN
    -- COPY USERS FROM SHOP A
 INSERT INTO
-hurtownia.uzytkownik(uzytkownik_id, email, plec)
-SELECT (s1.uzytkownik_id + 10000000000), s1.email, s1.plec
+hurtownia.uzytkownik(uzytkownik_id, plec)
+SELECT (s1.uzytkownik_id + 10000000000), s1.plec
 FROM sklep.uzytkownik s1; -- tylko dla klienta
 
    -- COPY ADRES FROM SHOP A
@@ -32,8 +32,8 @@ FROM sklep.platnosc s1;
 
      -- COPY PRODUKT FROM SHOP A
 INSERT INTO
-hurtownia.produkt(produkt_id, nazwa, cena, opis, kategoria_id)
-SELECT (s1.produkt_id + 10000000000), s1.nazwa, s1.cena, s1.opis, (s1.kategoria_id + 10000000000)
+hurtownia.produkt(produkt_id, nazwa, cena, kategoria_id)
+SELECT (s1.produkt_id + 10000000000), s1.nazwa, s1.cena, (s1.kategoria_id + 10000000000)
 FROM sklep.produkt s1; 
 
      -- COPY ZAMOWNIENIE FROM SHOP A
