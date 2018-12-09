@@ -76,7 +76,6 @@ CREATE TABLE `Platnosc` (
   `id`           int(10) NOT NULL AUTO_INCREMENT,
   `data_godzina` timestamp NOT NULL,
   `rodzaj`       varchar(255) NOT NULL,
-  `kwota`        int(10) NOT NULL,
   PRIMARY KEY (`id`)) COLLATE='utf8_unicode_ci' ENGINE=InnoDB;
 CREATE TABLE `Reklamacja` (
   `id`         int(10) NOT NULL AUTO_INCREMENT,
